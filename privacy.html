@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>clipbot — Règles de confidentialité</title>
+  <style>
+    :root { --bg: #ffffff; --text: #1d1d1f; --muted: #5f6368; --link: #1a5fb4; --line: #dadce0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #16181c; --text: #e8eaed; --muted: #9aa0a6; --link: #8ab4f8; --line: #3c4043; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--text);
+           font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+    h1 { font-size: 1.8rem; margin: 0 0 8px; }
+    h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+    p.lead { color: var(--muted); margin-top: 0; }
+    a { color: var(--link); overflow-wrap: anywhere; }
+    li { margin: 4px 0; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line);
+             color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Règles de confidentialité de clipbot</h1>
+    <p class="lead">Dernière mise à jour : 5 novembre 2026. <a href="./">Retour à l'accueil</a></p>
+
+    <h2>Qui utilise clipbot</h2>
+    <p>
+      clipbot est un outil personnel : il tourne sur l'ordinateur de son auteur et n'est utilisé
+      que par lui, pour publier des vidéos sur sa propre chaîne YouTube. Il n'a pas d'autres
+      utilisateurs et n'exploite aucun serveur.
+    </p>
+
+    <h2>Données Google utilisées</h2>
+    <p>Avec l'autorisation explicite du titulaire du compte (OAuth 2.0), clipbot utilise l'API YouTube Data pour :</p>
+    <ul>
+      <li>envoyer des vidéos sur la chaîne autorisée (autorisation <code>youtube.upload</code>) ;</li>
+      <li>lire le nom de cette chaîne et la liste de ses vidéos récentes, avec leurs tags
+        (autorisation <code>youtube.readonly</code>), uniquement pour vérifier qu'une vidéo n'a pas
+        déjà été publiée et ne jamais l'envoyer deux fois.</li>
+    </ul>
+    <p>clipbot ne lit ni ne modifie aucune autre donnée du compte Google.</p>
+
+    <h2>Stockage, partage et conservation</h2>
+    <ul>
+      <li>Les jetons d'accès sont enregistrés uniquement sur l'ordinateur de l'auteur, dans un
+        fichier lisible par son seul compte. Rien n'est envoyé à un autre serveur que ceux de Google.</li>
+      <li>Aucune donnée n'est vendue, partagée, transférée à des tiers, ni utilisée pour de la
+        publicité ou pour entraîner des modèles d'intelligence artificielle.</li>
+      <li>Les données sont conservées tant que l'outil est utilisé. Pour tout supprimer : effacer le
+        fichier local des jetons et retirer l'accès de l'application sur
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+        (voir aussi les <a href="https://security.google.com/settings/security/permissions">paramètres de sécurité Google</a>).</li>
+    </ul>
+
+    <h2>Services d'API YouTube</h2>
+    <p>
+      clipbot utilise les services d'API YouTube (YouTube API Services). En l'utilisant, on accepte
+      les <a href="https://www.youtube.com/t/terms">conditions d'utilisation de YouTube</a> ; les
+      données traitées par Google le sont selon les
+      <a href="https://policies.google.com/privacy">règles de confidentialité de Google</a>.
+    </p>
+    <p>
+      L'utilisation et le transfert, par clipbot, des informations reçues des API Google respectent
+      le <a href="https://developers.google.com/terms/api-services-user-data-policy">règlement sur
+      les données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation
+      limitée (Limited Use).
+    </p>
+
+    <footer>
+      Contact : <a href="https://github.com/ArnoGrl">github.com/ArnoGrl</a>
+    </footer>
+  </main>
+</body>
+</html>

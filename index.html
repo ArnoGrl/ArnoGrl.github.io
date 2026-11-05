@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>clipbot</title>
+  <style>
+    :root { --bg: #ffffff; --text: #1d1d1f; --muted: #5f6368; --link: #1a5fb4; --line: #dadce0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #16181c; --text: #e8eaed; --muted: #9aa0a6; --link: #8ab4f8; --line: #3c4043; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--text);
+           font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    p.lead { color: var(--muted); margin-top: 0; }
+    a { color: var(--link); }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line);
+             color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>clipbot</h1>
+    <p class="lead">Outil personnel de publication de clips de jeu vidéo.</p>
+    <p>
+      clipbot récupère des clips Twitch de Rocket League (RLCS), les monte au format vertical
+      (9:16) et les publie sur ma propre chaîne YouTube, en Shorts. Chaque vidéo crédite la chaîne
+      Twitch d'origine.
+    </p>
+    <p>
+      Ce n'est pas un service ouvert au public : clipbot tourne sur mon ordinateur et n'est utilisé
+      que par moi, pour ma chaîne. Il utilise les services d'API YouTube (YouTube API Services).
+    </p>
+    <p><a href="privacy.html">Règles de confidentialité</a></p>
+    <footer>
+      Contact : <a href="https://github.com/ArnoGrl">github.com/ArnoGrl</a>
+    </footer>
+  </main>
+</body>
+</html>
